@@ -1,22 +1,14 @@
 # SdoAnalysisToolkit_DemoData
 Extended Dataset used for SDO Analysis in the Paper.
 
-This repository has been spun off from the mainline SDO Analysis Toolkit to reduce the download size of the tool. 
+This repository has been spun off from the mainline SDO Analysis Toolkit to reduce the download size of the code package. It is available if a larger practice data set is desired. 
 
 **INSTALLATION INSTRUCTIONS:** 
 
 1. Clone for download the full SDO Analysis Toolkit from https://github.com/GiszterLab/SdoAnalysisToolkit
 
-2. Clone or download this repo (~400 MB) to the local drive. 
+2. Clone this repo (~400 MB) to the local drive. NOTE: If you attempt to download this directory as a ZIP file, the downloaded files will be corrupted. You _must_ clone the data through Git. 
 
 3. Place (merge) the contents of this repo, the directory '../demoData/' into the SDO Analyis Toolkit '../demoData/' directory.
 
-4. Clear the variable space within MATLAB using the '$clear' command. (This will avoid any issues with variables called 'xtData' already existing within the workspace.)
-
-5. Run the script 'concatenate_xtData.m' found within this directory. When prompted by the UI to select files, select 'xtDataTrial01.mat', 'xtDataTrial02.mat', ... 'xtDataTrial22.mat' (i.e., 22 files). This script will combine these files in the directory into a single variable, 'xtData', and will save this structure within the '.../demoData/' directory as '../demoData/xtData.mat' (This file will be ~400 MB.)
-
-6. Move the files 'xtData.mat' and 'ppData.mat' from this (SdoAnalysisToolkit_DemoData) '../demoData/' directory to the '../demoData' directory of the mainline (SdoAnalysisToolkit) repository (downloaded in step 1). (The SDO Analysis Toolkit '../demoData/' directory will now contain the files 'example_xtData.mat', 'example_ppData.mat', 'xtData.mat', 'ppData.mat'). Note that the 'example' variants of this 
-
-8. Run the SDO Analysis Toolkit as before (e.g., 'sdoAnalysis_demo.mlx'). When prompted to load 'xtData', direct the UI towards the newly created 'xtData.mat' ~400MB file in the '../demoData/' directory within the SDO Analysis Toolkit (as in Step 1). When prompted to load 'ppData', load the 'ppData.mat' file from within the same directory. Note that 'ppData.mat' is a file which was original downloaded from this (SdoAnalysisToolkit_DemoData) directory.
-
-9. After successsful generation of the (concatenated) 'xtData.mat' structure within the main SDO Analysis Toolkit folder, this demoData directory can be deleted from the local drive. 
+4. When prompted for _xtData_ or _ppData_ within the demo, load these files instead of the truncated version available within the toolkit. 
